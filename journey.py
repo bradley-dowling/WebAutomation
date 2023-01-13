@@ -11,3 +11,4 @@ driver = webdriver.Chrome(service=service, options=options)
 driver.get("https://www.selenium.dev/")
 
 assert "Selenium" in driver.title
+print("Test successful")
