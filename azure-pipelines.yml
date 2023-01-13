@@ -11,6 +11,6 @@ pool:
 
 steps:
 - script: |
-    pip install -r requirements.txt --user
-    sudo python journey.py
+    pip install -r requirements.txt
+    python journey.py
 
