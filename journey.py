@@ -1,8 +1,9 @@
+from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+service = Service(executable_path="/usr/local/share/chrome_driver")
+driver = webdriver.Chrome(service=service)
+
 driver.get("https://www.selenium.dev/")
 
 assert "Selenium" in driver.title
