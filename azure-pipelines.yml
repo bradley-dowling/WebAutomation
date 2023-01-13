@@ -10,4 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: ls
+- script: |
+    pip install -r requirements.txt --user
+    python journey.py
+
