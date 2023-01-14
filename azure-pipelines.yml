@@ -11,7 +11,5 @@ pool:
 
 steps:
 - script: |
-    mkdir /usr/bin/WebAutomation2
-    git clone https://github.com/bradley-dowling/WebAutomation2.git /usr/bin/WebAutomation2
-    python /usr/bin/WebAutomation2/WebAutomation2_Testing.py
-
+    pwd
+    ls
